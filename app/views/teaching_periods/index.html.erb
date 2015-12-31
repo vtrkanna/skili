@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Teaching Periods</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @teaching_periods.each do |teaching_period| %>
+      <tr>
+        <td><%= link_to 'Show', teaching_period %></td>
+        <td><%= link_to 'Edit', edit_teaching_period_path(teaching_period) %></td>
+        <td><%= link_to 'Destroy', teaching_period, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Teaching period', new_teaching_period_path %>
