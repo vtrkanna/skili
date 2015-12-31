@@ -62,13 +62,13 @@ class TeachingPeriodsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_teaching_period
-      @teaching_period = TeachingPeriod.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_teaching_period
+    @teaching_period = TeachingPeriod.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def teaching_period_params
-      params[:teaching_period]
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def teaching_period_params
+    params[:teaching_period]
+  end
 end

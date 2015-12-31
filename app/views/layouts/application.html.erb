@@ -2,31 +2,32 @@
 <html>
 <head>
   <title>Skili</title>
-  <meta name="keywords" content="vtrkanna" />
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <meta name="keywords" content="vtrkanna"/>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
   <script>
-  $(document).ready(function(){
-      $(".dropdown").hover(
-          function() {
-              $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-              $(this).toggleClass('open');
-          },
-          function() {
-              $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
-              $(this).toggleClass('open');
-          }
-      );
-  });
+      $(document).ready(function () {
+          $(".dropdown").hover(
+                  function () {
+                      $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                      $(this).toggleClass('open');
+                  },
+                  function () {
+                      $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                      $(this).toggleClass('open');
+                  }
+          );
+      });
   </script>
 </head>
 <body>
-   <%= render "/layouts/header" %>
-   <p class="notice"><%= notice %></p>
-   <p class="alert"><%= alert %></p>
-   <%= yield %>
-  <%= render "/layouts/footer" %>
+<%= render "/layouts/header" %>
+<p class="notice"><%= notice %></p>
+
+<p class="alert"><%= alert %></p>
+<%= yield %>
+<%= render "/layouts/footer" %>
 </body>
 </html>

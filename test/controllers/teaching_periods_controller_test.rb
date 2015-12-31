@@ -18,7 +18,7 @@ class TeachingPeriodsControllerTest < ActionController::TestCase
 
   test "should create teaching_period" do
     assert_difference('TeachingPeriod.count') do
-      post :create, teaching_period: {  }
+      post :create, teaching_period: {}
     end
 
     assert_redirected_to teaching_period_path(assigns(:teaching_period))
@@ -35,7 +35,7 @@ class TeachingPeriodsControllerTest < ActionController::TestCase
   end
 
   test "should update teaching_period" do
-    patch :update, id: @teaching_period, teaching_period: {  }
+    patch :update, id: @teaching_period, teaching_period: {}
     assert_redirected_to teaching_period_path(assigns(:teaching_period))
   end
 

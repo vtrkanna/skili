@@ -13,7 +13,7 @@ class CreateTrainers < ActiveRecord::Migration
       t.integer :country_id
       t.integer :city_id
       t.string :string
-      
+
       t.timestamps null: false
     end
   end
