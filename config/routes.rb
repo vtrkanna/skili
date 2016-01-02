@@ -5,6 +5,19 @@ Rails.application.routes.draw do
   resources :skills
   resources :students
   resources :users
+
+  get 'contact' => 'home#contact'
+  get 'about' => 'home#about'
+  get 'career' => 'home#career'
+  get 'courses' => 'home#courses'
+  get 'features' => 'home#features'
+  get 'terms' => 'home#terms'
+  get 'shortcodes' => 'home#shortcodes'
+  get 'faq' => 'home#faq'
+  get 'services' => 'home#services'
+
+  get 'search' => 'home/search'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
