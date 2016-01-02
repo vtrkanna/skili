@@ -10,7 +10,11 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
+//= require jquery.min.js
+//= require bootstrap.min.js
+//= require jquery.flexslider.js
+//= require responsiveslides.min.js
+//= require underscore-min.js
+//= require moment-2.2.1.js
+//= require jquery.countdown.js
 //= require_tree .
