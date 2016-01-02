@@ -27,19 +27,19 @@
 	padding:20px 20px;
 	text-align: center;
 	background-color:#2f374c;
-	
+
 }
 .cal1 .clndr .clndr-controls .month {
    text-align:center;
 }
-.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button { 
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button {
   position:absolute;
   right:20px;
   top:15px;
   width:30px;
   height:30px;
   text-indent: -4000px;
-  background: url(../images/arrow-right.png) no-repeat 0px;
+  background: url("arrow-right.png") no-repeat 0px;
   cursor: pointer;
   -webkit-user-select: none;
   /* Chrome/Safari */
@@ -51,14 +51,14 @@
 .cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button.inactive:hover {
   cursor: default;
 }
-.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button { 
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
    position:absolute;
    left:20px;
    top:15px;
    width:30px;
    height:30px;
   text-indent: -4000px;
-  background: url(../images/arrow-left.png) no-repeat 0px;
+  background: url("arrow-left.png") no-repeat 0px;
   cursor: pointer;
   -webkit-user-select: none;
   /* Chrome/Safari */
