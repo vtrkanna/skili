@@ -5,7 +5,7 @@ class HomeController < ApplicationController
     if user_signed_in?
       render template: "home/dashboard"
     else
-      render template: "index"
+      render template: "home/index"
     end
   end
 
