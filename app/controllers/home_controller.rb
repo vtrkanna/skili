@@ -2,6 +2,11 @@ class HomeController < ApplicationController
   before_action :authenticate_user!, :except => [:index,:contact,:about,:courses, :search, :features, :career, :terms, :shortcodes, :faq, :services]
 
   def index
+    if user_signed_in?
+      render template: "home/dashboard"
+    else
+      render template: "index"
+    end
   end
 
   def contact
