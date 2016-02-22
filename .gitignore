@@ -11,3 +11,7 @@
 /log/*
 !/log/.keep
 /tmp
+solr/
+.byebug_history
+public/assets/
+.gitignore
